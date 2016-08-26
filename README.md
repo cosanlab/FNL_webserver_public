@@ -2,19 +2,19 @@
 
 ####Jump to Section
 
-- [What IS included](https://github.com/cosanlab/FNL_webserver#what-is-included)
+- [What IS included](https://github.com/cosanlab/FNL_webserver_public#what-is-included)
 
-- [Getting Started](https://github.com/cosanlab/FNL_webserver#getting-started)
+- [Getting Started](https://github.com/cosanlab/FNL_webserver_public#getting-started)
 
-    - [Adding users](https://github.com/cosanlab/FNL_webserver#adding-users)
+    - [Adding users](https://github.com/cosanlab/FNL_webserver_public#adding-users)
 
-    - [Running the development server](https://github.com/cosanlab/FNL_webserver#running-the-development-server)
+    - [Running the development server](https://github.com/cosanlab/FNL_webserver_public#running-the-development-server)
 
-    - [Initializing/populating the databases](https://github.com/cosanlab/FNL_webserver#initializingpopulating-the-databases)
+    - [Initializing/populating the databases](https://github.com/cosanlab/FNL_webserver_public#initializingpopulating-the-databases)
 
-- [Working with the production server](https://github.com/cosanlab/FNL_webserver#working-with-the-production-server)
+- [Working with the production server](https://github.com/cosanlab/FNL_webserver_public#working-with-the-production-server)
 
-    - [Transferring files/videos to the server](https://github.com/cosanlab/FNL_webserver#transferring-filesvideos-to-the-server)
+    - [Transferring files/videos to the server](https://github.com/cosanlab/FNL_webserver_public#transferring-filesvideos-to-the-server)
 
 ####Folders not included:
 
