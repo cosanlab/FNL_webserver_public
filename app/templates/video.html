@@ -1,0 +1,77 @@
+{% extends "base.html" %}
+
+<!-- <!DOCTYPE html>
+<html> -->
+
+{%block content%}
+<body>
+    <video class = col-lg-10 id="video1" controls autoplay>
+        <source src='../../static/FNL_01_640x360_h264_med.webm' type = 'video/webm'></source>
+        <source src='../../../static/FNL_01_640x360_h264_med.webm#t={{timestart}}' type = 'video/webm'></source>
+    Your browser does not support HTML5 video.
+    </video>
+
+    <div>
+        {% if timestart %}
+            <p>
+                <button id="playme">Play/Pause Video</button>
+            </p>
+            <p>
+                <button id="jump">Jump to {{timestart}}</button>
+            </p>
+        {%else%}
+            <p>Add a timepoint on the end of the URL to query a time.</p>
+        {%endif%}
+        <p id='JSinfo'></p>
+    </div>
+</body>
+
+
+{% block javascript %}
+    <script type="text/javascript">
+    {% if timestart %}
+        var JStimestart = {{timestart}};
+    {% else %}
+        var JStimestart = 0
+    {%endif%}
+
+         var video1 = document.getElementById('video1'),
+             playbutton = document.getElementById('playme'),
+             jumplink = document.getElementById('jump');
+
+         video1.addEventListener('loadedmetadata', function() {
+             this.currentTime = JStimestart;
+         }, false);
+
+         {% if timestart %}
+         jumplink.addEventListener("click", function (event) {
+             event.preventDefault();
+             video1.play();
+             video1.pause();
+             video1.currentTime = JStimestart;
+             video1.play();
+         }, false);
+
+         playbutton.addEventListener("click", function () {
+             if (video1.paused) {
+                 video1.play();
+             } else {
+                 video1.pause();
+             }
+         }, false);
+
+         {%else%}
+         playbutton.addEventListener("click", function () {
+             if (video1.paused) {
+                 video1.play();
+             } else {
+                 video1.pause();
+             }
+         }, false);
+         {%endif%}
+    </script>
+    
+{% endblock %}
+
+{%endblock%}
+<!-- </html> -->

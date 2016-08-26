@@ -1,0 +1,7 @@
+flask
+sqlalchemy
+Flask-SQLALchemy
+flask_oauthlib
+flask_bootstrap
+flask_migrate
+flask_script

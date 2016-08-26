@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+<body>
+{% block page_content %}
+<div class="page-header">
+    <h2>{% if name %}Hello, {{ name }}!{% elif login %}Hello!{% else %}Please log in{% endif %}</h2>
+    <h4>{% if authorized %}You're approved!{% elif login %}Please register with the lab{% endif %}</h4>
+</div>
+<div class="page-content">
+{% if authorized %}
+<button>
+    <a href="/streaming/ep1/">
+    Stream Episode 1
+</button>
+{% endif %}
+</div>
+{% endblock %}
+</body>
